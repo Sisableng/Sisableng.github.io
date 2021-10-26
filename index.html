@@ -121,7 +121,7 @@
                 <div class="container pt-4 pb-5 py-lg-5 mt-5">
                     <div class="row align-items-center py-5">
                         <div class="col-lg-6 d-flex justify-content-center">
-                          <div class="my-border-blue">
+                          <div class="my-border-blue fade-right">
                             <img src="portfolio/Isal.jpg" class="img-fluid">
                           </div>
             </div>
@@ -154,11 +154,22 @@
     <script src="https://cdn.jsdelivr.net/gh/Sisableng/JsAing@main/pro.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Sisableng/JsAing@main/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Sisableng/JsAing@main/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Sisableng/JsAing@main/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Sisableng/JsAing@main/TextPlugin.min.js"></script>
+    
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script>
       // AOS REGISTER
       AOS.init();
+
+      // GSAP PLUGIN
+      gsap.registerPlugin(TextPlugin);
+
+      // GSAP SCRIPT
+      gsap.from('.navbar-brand, .menu-icon',{duration: 1, y: '-100%', opacity: 0,});
+      gsap.from('.fade-right',{duration: 3, x: '-100%', opacity: 0,});
+      gsap.to('.tulis',{duration: 3, delay: 2, text:'Graphic Designer & Coder.'});
     </script>
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
