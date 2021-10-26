@@ -88,7 +88,7 @@
                 <div class="container pt-4 pb-5 py-lg-5 mt-5">
                         <div class="col-lg-12">
                             <h1 class="fw-bold text-center mb-5" data-aos="fade-up" data-aos-duration="2000">What I do Best?</h1>
-                            <div class="card card-rounded" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700" data-aos-offset="0">
+                            <div class="card card-rounded" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="700">
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-md-6 d-flex justify-content-center">
@@ -120,8 +120,8 @@
               <section class="d-flex align-items-center pt-6 pb-lg-5 bg-four" id="portfolio">
                 <div class="container pt-4 pb-5 py-lg-5 mt-5">
                     <div class="row align-items-center py-5">
-                        <div class="col-lg-6 d-flex justify-content-center">
-                          <div class="my-border-blue fade-right">
+                        <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="2000">
+                          <div class="my-border-blue">
                             <img src="portfolio/Isal.jpg" class="img-fluid">
                           </div>
             </div>
@@ -168,7 +168,6 @@
 
       // GSAP SCRIPT
       gsap.from('.navbar-brand, .menu-icon',{duration: 1, y: '-100%', opacity: 0,});
-      gsap.from('.fade-right',{duration: 3, x: '-100%', opacity: 0,});
       gsap.to('.tulis',{duration: 3, delay: 2, text:'Graphic Designer & Coder.'});
     </script>
     <!--
